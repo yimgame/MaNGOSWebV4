@@ -23,7 +23,7 @@ if($Account->isLoggedIn() == FALSE)
     redirect('?p=account&sub=login',1);
 }
 
-if($mwe_config['emulator'] == 'arcemu')
+if($mwe_config['emulator'] == 'arcemu') //why is asking by an old emulator that is no mangos or trinity based core ?
 {
 	$regiseter_ip = $user['lastip'];
 	$joindate = '?';
